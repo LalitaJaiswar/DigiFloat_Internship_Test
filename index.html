@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Job Listings</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+	<script src="js/index.js"></script>
+	<style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="outer">
+	<div id="top-row" style="background:hsl(180, 29%, 50%)" >
+	<div id="top-column" ></div>
+	</div>
+	
+	<!--Filter section-->
+	<div class="row filter-row">
+	<div id="frontend_f" class="filter-block">
+	<p>Frontend</p><a href="#" onclick="remove_frontend()">X</a>
+	</div>
+	<div id="backend_f" class="filter-block">
+	<p>Backend</p><a href="#" onclick="remove_backend()">X</a>
+	</div>
+	<div id="fullstack_f" class="filter-block">
+	<p>Fullstack</p><a href="#" onclick="remove_fullstack()">X</a>
+	</div>
+	<div id="junior_f" class="filter-block">
+	<p>Junior</p><a href="#" onclick="remove_junior()">X</a>
+	</div>
+	<div id="midweight_f" class="filter-block">
+	<p>Midweight</p><a href="#" onclick="remove_midweight()">X</a>
+	</div>
+	<div id="senior_f" class="filter-block">
+	<p>Senior</p><a href="#" onclick="remove_senior()">X</a>
+	</div>
+	<div id="python_f" class="filter-block">
+	<p>Python</p><a href="#" onclick="remove_python()">X</a>
+	</div>
+	<div id="ruby_f" class="filter-block">
+	<p>Ruby</p><a href="#" onclick="remove_ruby()">X</a>
+	</div>
+	<div id="javascript_f" class="filter-block">
+	<p>Javascript</p><a href="#" onclick="remove_javascript()">X</a>
+	</div>
+	<div id="html_f" class="filter-block">
+	<p>HTML</p><a href="#" onclick="remove_html()">X</a>
+	</div>
+	<div id="css_f" class="filter-block">
+	<p>CSS</p><a href="#" onclick="remove_css()">X</a>
+	</div>
+	<div id="react_f" class="filter-block">
+	<p>React</p><a href="#" onclick="remove_react()">X</a>
+	</div>
+	<div id="sass_f" class="filter-block">
+	<p>Saas</p><a href="#" onclick="remove_sass()">X</a>
+	</div>
+	<div id="vue_f" class="filter-block">
+	<p>Vue</p><a href="#" onclick="remove_vue()">X</a>
+	</div>
+	<div id="django_f" class="filter-block">
+	<p>Django</p><a href="#" onclick="remove_django()">X</a>
+	</div>
+	<div id="ror_f" class="filter-block">
+	<p>RoR</p><a href="#" onclick="remove_ror()">X</a>
+	</div>
+	<div id="all_f" class="filter-block" style="float:right">
+	<a href="#" onclick="all_filter()">Clear</a>
+	</div>
+	</div>
+	<!---->
+	
+	
+	<!--1st Item-->
+	
+	<div class="row custom-row" data-role="frontend" data-level="senior" data-language="html,css,javascript" data-tools>
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/photosnap.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Photosnap</span>
+		<span class="new1">NEW!</span>
+		<span class="featured">FEATURED</span><br/>
+		<span class="position"><a href="#">Senior Front-end Developer</a></span><br/>
+		<span class="job-time">1d Ago</span> <span class="dot1"></span>
+		<span class="job-type">Full Time</span><span class="dot1"></span>
+		<span class="job-location">USA Only</span>
+		
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="frontend()">Frontend</a>
+		<a href="#" class="link-btn" onclick="senior()">Senior</a>
+		<a href="#" class="link-btn" onclick="html()">HTML</a>
+		<a href="#" class="link-btn" onclick="css()">CSS</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+	</div>
+	</div>
+	<!--2nd Item-->
+	<div class="row custom-row" data-role="fullstack" data-language="python" data-tools="react" data-level="midweight">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/manage.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Manage</span>
+		<span class="new1">NEW!</span>
+		<span class="featured">FEATURED</span><br/>
+		<span class="position"><a href="#">Full Stack Developer</a></span><br/>
+		<span class="job-time">1d Ago</span> <span class="dot1"></span>
+		<span class="job-type">Part Time</span><span class="dot1"></span>
+		<span class="job-location">Remote</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="fullstack()" >Full Stack</a>
+		<a href="#" class="link-btn" onclick="midweight()">Midweight</a>
+		<a href="#" class="link-btn" onclick="python()">Python</a>
+		<a href="#" class="link-btn" onclick="react()">React</a>
+	</div>
+	</div>
+	
+	<!--3rd Item-->
+	
+	<div class="row custom-row" data-level="junior" data-role="frontend" data-language="javascript" data-tools="react,sass">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/account.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Account</span>
+		<span class="new1">NEW!</span><br/>
+		<span class="position"><a href="#">Junior Frontend Developer</a></span><br/>
+		<span class="job-time">2d Ago</span> <span class="dot1"></span>
+		<span class="job-type">Part Time</span><span class="dot1"></span>
+		<span class="job-location">USA Only</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="frontend()">Frontend</a>
+		<a href="#" class="link-btn" onclick="junior()">Junior</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+		<a href="#" class="link-btn" onclick="react()">React</a>
+		<a href="#" class="link-btn" onclick="sass()">Sass</a>
+	</div>
+	</div>
+	
+	<!--4th Item-->
+	
+	<div class="row custom-row" data-role="frontend" data-level="junior" data-language="css,javascript" data-tools>
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/myhome.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">MyHome</span><br/>
+		<span class="position"><a href="#">Junior Frontend Developer</a></span><br/>
+		<span class="job-time">5d Ago</span> <span class="dot1"></span>
+		<span class="job-type">Contract</span><span class="dot1"></span>
+		<span class="job-location">USA Only</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="frontend()">Frontend</a>
+		<a href="#" class="link-btn" onclick="junior()">Junior</a>
+		<a href="#" class="link-btn" onclick="css()">CSS</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+	</div>
+	</div>
+	
+	<!--5th Item-->
+	
+	<div class="row custom-row" data-level="midweight" data-role="fullstack" data-language="javascript,ruby" data-tools="sass" >
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/loop-studios.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Loop Studios</span><br/>
+		<span class="position"><a href="#">Software Engineer</a></span><br/>
+		<span class="job-time">1w Ago</span> <span class="dot1"></span>
+		<span class="job-type">Fulltime</span><span class="dot1"></span>
+		<span class="job-location">Worldwide</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="fullstack()">Fullstack</a>
+		<a href="#" class="link-btn" onclick="midweight()">Midweight</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+		<a href="#" class="link-btn" onclick="ruby()">Ruby</a>
+		<a href="#" class="link-btn" onclick="sass()">Sass</a>
+	</div>
+	</div>
+	
+	<!--6th Item-->
+	
+	<div class="row custom-row" data-level="junior" data-role="backend" data-language="ruby" data-tools="ror">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/faceit.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">FaceIt</span><br/>
+		<span class="position"><a href="#">Junior Backend Developer</a></span><br/>
+		<span class="job-time">2w Ago</span> <span class="dot1"></span>
+		<span class="job-type">Fulltime</span><span class="dot1"></span>
+		<span class="job-location">UK Only</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="backend()">Backend</a>
+		<a href="#" class="link-btn"  onclick="junior()">Junior</a>
+		<a href="#" class="link-btn" onclick="ruby()">Ruby</a>
+		<a href="#" class="link-btn" onclick="ror()">RoR</a>
+	</div>
+	</div>
+	
+	<!--7th Item-->
+	
+	<div class="row custom-row" data-role="frontend" data-level="junior" data-language="html,javascript" data-tools="sass">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/shortly.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Shortly</span><br/>
+		<span class="position"><a href="#">Junior Developer</a></span><br/>
+		<span class="job-time">2w Ago</span> <span class="dot1"></span>
+		<span class="job-type">Fulltime</span><span class="dot1"></span>
+		<span class="job-location">Worldwide</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="frontend()">Frontend</a>
+		<a href="#" class="link-btn"  onclick="junior()">Junior</a>
+		<a href="#" class="link-btn" onclick="html()">HTML</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+		<a href="#" class="link-btn" onclick="sass()">Sass</a>
+	</div>
+	</div>
+	
+	<!--8th Item-->
+	
+	<div class="row custom-row" data-role="frontend" data-level="junior" data-language="javascript" data-tools="vue,sass">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/insure.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Insure</span><br/>
+		<span class="position"><a href="#">Junior Frontend Developer</a></span><br/>
+		<span class="job-time">2w Ago</span> <span class="dot1"></span>
+		<span class="job-type">Fulltime</span><span class="dot1"></span>
+		<span class="job-location">USA Only</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="frontend()">Frontend</a>
+		<a href="#" class="link-btn"  onclick="junior()">Junior</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+		<a href="#" class="link-btn" onclick="vue()">Vue</a>
+		<a href="#" class="link-btn" onclick="sass()">Sass</a>
+	</div>
+	</div>
+	
+	<!--9th Item-->
+	
+	<div class="row custom-row" data-role="fullstack" data-level="midweight" data-language="javascript,python" data-tools="django">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/eyecam-co.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">Eyecam Co.</span><br/>
+		<span class="position"><a href="#">Fullstack Developer</a></span><br/>
+		<span class="job-time">3w Ago</span> <span class="dot1"></span>
+		<span class="job-type">Fulltime</span><span class="dot1"></span>
+		<span class="job-location">Worldwide</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="fullstack()">Fullstack</a>
+		<a href="#" class="link-btn" onclick="midweight()">Midweight</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+		<a href="#" class="link-btn" onclick="python()">Python</a>
+		<a href="#" class="link-btn" onclick="django()">Django</a>
+	</div>
+	</div>
+	
+	<!--10th Item-->
+	
+	<div class="row custom-row" data-role="frontend" data-level="junior" data-language="javascript" data-tools="react,sass">
+	<div class="col-6 custom-col-left">
+		<div class="row">
+		<img class="col-3 custom-col-logo" src="/C:/Users/csc/Desktop/DigiFloat/images/the-air-filter-company.svg" />
+		<div class="col-9 custom-col-description">
+		<span class="company">The Air Filter Company</span>
+		<span class="position"><a href="#">Frontend Developer</a></span><br/>
+		<span class="job-time">1m Ago</span> <span class="dot1"></span>
+		<span class="job-type">Parttime</span><span class="dot1"></span>
+		<span class="job-location">Worldwide</span>
+		</div>
+		</div>
+	</div>
+	<div class="col-6 custom-col-right">
+		<a href="#" class="link-btn" onclick="frontend()">Frontend</a>
+		<a href="#" class="link-btn"  onclick="junior()">Junior</a>
+		<a href="#" class="link-btn" onclick="javascript()">Javascript</a>
+		<a href="#" class="link-btn" onclick="react()">React</a>
+		<a href="#" class="link-btn" onclick="sass()">Sass</a>
+	</div>
+	</div>
+	<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Lalita Jaiswar</a>.
+  </div>
+</div>
+</body>
+</html>
